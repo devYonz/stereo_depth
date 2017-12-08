@@ -1,0 +1,329 @@
+\begin{thebibliography}{50}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Bradski(2000)]{opencv_library}
+G.~Bradski.
+\newblock The {OpenCV} library.
+\newblock \emph{Dr. Dobb's Journal of Software Tools}, 2000.
+
+\bibitem[Bromley et~al.(1993)Bromley, Bentz, Bottou, Guyon, LeCun, Moore,
+  S{\"a}ckinger, and Shah]{bromley1993signature}
+Jane Bromley, James~W Bentz, L{\'e}on Bottou, Isabelle Guyon, Yann LeCun, Cliff
+  Moore, Eduard S{\"a}ckinger, and Roopak Shah.
+\newblock Signature verification using a siamese time delay neural network.
+\newblock \emph{International Journal of Pattern Recognition and Artificial
+  Intelligence}, 7\penalty0 (04):\penalty0 669--688, 1993.
+
+\bibitem[Brown et~al.(2011)Brown, Hua, and Winder]{brown2011discriminative}
+Matthew Brown, Gang Hua, and Simon Winder.
+\newblock Discriminative learning of local image descriptors.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 33\penalty0 (1):\penalty0 43--57, 2011.
+
+\bibitem[Brox and Malik(2011)]{brox2011large}
+Thomas Brox and Jitendra Malik.
+\newblock Large displacement optical flow: descriptor matching in variational
+  motion estimation.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 33\penalty0 (3):\penalty0 500--513, 2011.
+
+\bibitem[Chakrabarti et~al.(2015)Chakrabarti, Xiong, Gortler, and
+  Zickler]{chakrabarti2014low}
+Ayan Chakrabarti, Ying Xiong, Steven~J. Gortler, and Todd Zickler.
+\newblock Low-level vision by consensus in a spatial hierarchy of regions.
+\newblock \emph{IEEE Conference on Computer Vision and Pattern Recognition
+  (CVPR)}, June 2015.
+
+\bibitem[Chen et~al.(2015)Chen, Sun, Yu, Wang, and Huang]{deep_embed}
+Zhuoyuan Chen, Xun Sun, Yinan Yu, Liang Wang, and Chang Huang.
+\newblock A deep visual correspondence embedding model for stereo matching
+  costs.
+\newblock \emph{IEEE International Conference on Computer Vision (ICCV)}, 2015.
+
+\bibitem[Chetlur et~al.(2014)Chetlur, Woolley, Vandermersch, Cohen, Tran,
+  Catanzaro, and Shelhamer]{chetlur2014cudnn}
+Sharan Chetlur, Cliff Woolley, Philippe Vandermersch, Jonathan Cohen, John
+  Tran, Bryan Catanzaro, and Evan Shelhamer.
+\newblock {cuDNN}: Efficient primitives for deep learning.
+\newblock \emph{CoRR}, abs/1410.0759, 2014.
+\newblock URL \url{http://arxiv.org/abs/1410.0759}.
+
+\bibitem[Collobert et~al.(2011)Collobert, Kavukcuoglu, and
+  Farabet]{collobert2011torch7}
+Ronan Collobert, Koray Kavukcuoglu, and Cl{\'e}ment Farabet.
+\newblock Torch7: A matlab-like environment for machine learning.
+\newblock In \emph{BigLearn, NIPS Workshop}, 2011.
+
+\bibitem[Einecke and Eggert(2010)]{einecke2010two}
+Nils Einecke and Julian Eggert.
+\newblock A two-stage correlation method for stereoscopic depth estimation.
+\newblock In \emph{Digital Image Computing: International Conference on
+  Techniques and Applications (DICTA)}, pages 227--234, 2010.
+
+\bibitem[Geiger et~al.(2011)Geiger, Roser, and Urtasun]{geiger2011efficient}
+Andreas Geiger, Martin Roser, and Raquel Urtasun.
+\newblock Efficient large-scale stereo matching.
+\newblock In \emph{Proceedings of the 10th Asian Conference on Computer Vision
+  - Volume Part I}, ACCV'10, pages 25--38. Springer-Verlag, Berlin, Heidelberg,
+  2011.
+
+\bibitem[Geiger et~al.(2013)Geiger, Lenz, Stiller, and Urtasun]{Geiger2013IJRR}
+Andreas Geiger, Philip Lenz, Christoph Stiller, and Raquel Urtasun.
+\newblock Vision meets robotics: the {KITTI} dataset.
+\newblock \emph{International Journal of Robotics Research (IJRR)}, 2013.
+
+\bibitem[G{\"u}ney and Geiger(2015)]{guney2015displets}
+Fatma G{\"u}ney and Andreas Geiger.
+\newblock Displets: Resolving stereo ambiguities using object knowledge.
+\newblock \emph{IEEE Conference on Computer Vision and Pattern Recognition
+  (CVPR)}, June 2015.
+
+\bibitem[Haeusler et~al.(2013)Haeusler, Nair, and
+  Kondermann]{haeusler2013ensemble}
+Ralf Haeusler, Rahul Nair, and Daniel Kondermann.
+\newblock Ensemble learning for confidence measures in stereo vision.
+\newblock \emph{IEEE Conference on Computer Vision and Pattern Recognition
+  (CVPR)}, June 2013.
+
+\bibitem[Han et~al.(2015)Han, Leung, Jia, Sukthankar, and
+  Berg]{han2015matchnet}
+Xufeng Han, Thomas Leung, Yangqing Jia, Rahul Sukthankar, and Alexander~C Berg.
+\newblock {MatchNet}: Unifying feature and metric learning for patch-based
+  matching.
+\newblock \emph{IEEE Conference on Computer Vision and Pattern Recognition
+  (CVPR)}, June 2015.
+
+\bibitem[Hirschm{\"u}ller(2008)]{hirschmuller2008stereo}
+Heiko Hirschm{\"u}ller.
+\newblock Stereo processing by semiglobal matching and mutual information.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 30\penalty0 (2):\penalty0 328--341, 2008.
+
+\bibitem[Hirschm{\"u}ller and Scharstein(2007)]{hirschmuller2007evaluation}
+Heiko Hirschm{\"u}ller and Daniel Scharstein.
+\newblock Evaluation of cost functions for stereo matching.
+\newblock \emph{IEEE Conference on Computer Vision and Pattern Recognition
+  (CVPR)}, 2007.
+
+\bibitem[Hirschm{\"u}ller and Scharstein(2009)]{hirschmuller2009evaluation}
+Heiko Hirschm{\"u}ller and Daniel Scharstein.
+\newblock Evaluation of stereo matching costs on images with radiometric
+  differences.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 31\penalty0 (9):\penalty0 1582--1599, 2009.
+
+\bibitem[Hornacek et~al.(2014)Hornacek, Fitzgibbon, and
+  Rother]{hornacek2014sphereflow}
+Michael Hornacek, Andrew Fitzgibbon, and Carsten Rother.
+\newblock {SphereFlow}: 6 {DoF} scene flow from {RGB-D} pairs.
+\newblock \emph{IEEE Conference on Computer Vision and Pattern Recognition
+  (CVPR)}, June 2014.
+
+\bibitem[Kong and Tao(2004)]{kong2004method}
+Dan Kong and Hai Tao.
+\newblock A method for learning matching errors for stereo computation.
+\newblock \emph{British Machine Vision Conference (BMVC)}, 2004.
+
+\bibitem[Kong and Tao(2006)]{kong2006stereo}
+Dan Kong and Hai Tao.
+\newblock Stereo matching via learning multiple experts behaviors.
+\newblock \emph{British Machine Vision Conference (BMVC)}, 2006.
+
+\bibitem[Kostkov{\'a} and S{\'a}ra(2003)]{kostkova2003stratified}
+Jana Kostkov{\'a} and Radim S{\'a}ra.
+\newblock Stratified dense matching for stereopsis in complex scenes.
+\newblock \emph{British Machine Vision Conference (BMVC)}, 2003.
+
+\bibitem[Kowalczuk et~al.(2013)Kowalczuk, Psota, and Perez]{kowalczuk2013real}
+Jedrzej Kowalczuk, Eric~T Psota, and Lance~C Perez.
+\newblock Real-time stereo matching on {CUDA} using an iterative refinement
+  method for adaptive support-weight correspondences.
+\newblock \emph{IEEE Transactions on Circuits and Systems for Video
+  Technology}, 23\penalty0 (1):\penalty0 94--104, 2013.
+
+\bibitem[LeCun et~al.(1998)LeCun, Bottou, Bengio, and
+  Haffner]{lecun1998gradient}
+Yann LeCun, L{\'e}on Bottou, Yoshua Bengio, and Patrick Haffner.
+\newblock Gradient-based learning applied to document recognition.
+\newblock \emph{Proceedings of the IEEE}, 86\penalty0 (11):\penalty0
+  2278--2324, 1998.
+
+\bibitem[Li and Huttenlocher(2008)]{li2008learning}
+Yunpeng Li and Daniel~P Huttenlocher.
+\newblock Learning for stereo vision using the structured support vector
+  machine.
+\newblock \emph{IEEE Conference on Computer Vision and Pattern Recognition
+  (CVPR)}, June 2008.
+
+\bibitem[Mei et~al.(2011)Mei, Sun, Zhou, Wang, Zhang, et~al.]{mei2011building}
+Xing Mei, Xun Sun, Mingcai Zhou, Haitao Wang, Xiaopeng Zhang, et~al.
+\newblock On building an accurate stereo matching system on graphics hardware.
+\newblock \emph{IEEE International Conference on Computer Vision Workshops
+  (ICCV Workshops)}, pages 467--474, 2011.
+
+\bibitem[Menze and Geiger(2015)]{menze2015object}
+Moritz Menze and Andreas Geiger.
+\newblock Object scene flow for autonomous vehicles.
+\newblock \emph{IEEE Conference on Computer Vision and Pattern Recognition
+  (CVPR)}, June 2015.
+
+\bibitem[Nickolls et~al.(2008)Nickolls, Buck, Garland, and
+  Skadron]{nickolls2008scalable}
+John Nickolls, Ian Buck, Michael Garland, and Kevin Skadron.
+\newblock Scalable parallel programming with {CUDA}.
+\newblock \emph{Queue}, 6\penalty0 (2):\penalty0 40--53, 2008.
+
+\bibitem[Paulin et~al.(2015)Paulin, Douze, Harchaoui, Mairal, Perronin, and
+  Schmid]{paulin2015local}
+Mattis Paulin, Matthijs Douze, Zaid Harchaoui, Julien Mairal, Florent Perronin,
+  and Cordelia Schmid.
+\newblock Local convolutional features with unsupervised training for image
+  retrieval.
+\newblock In \emph{IEEE International Conference on Computer Vision (ICCV)},
+  pages 91--99, 2015.
+
+\bibitem[Peris et~al.(2012)Peris, Maki, Martull, Ohkawa, and
+  Fukui]{peris2012towards}
+Martin Peris, Atsuto Maki, Sara Martull, Yasuhiro Ohkawa, and Kazuhiro Fukui.
+\newblock Towards a simulation driven stereo vision system.
+\newblock In \emph{21st International Conference on Pattern Recognition
+  (ICPR)}, pages 1038--1042, 2012.
+
+\bibitem[Psota et~al.(2015)Psota, Kowalczuk, Mittek, and Perez]{psota2015map}
+Eric~T Psota, Jedrzej Kowalczuk, Mateusz Mittek, and Lance~C Perez.
+\newblock Map disparity estimation using hidden markov trees.
+\newblock \emph{IEEE International Conference on Computer Vision (ICCV)}, 2015.
+
+\bibitem[Revaud et~al.(2015)Revaud, Weinzaepfel, Harchaoui, and
+  Schmid]{revaud2015deepmatching}
+Jerome Revaud, Philippe Weinzaepfel, Zaid Harchaoui, and Cordelia Schmid.
+\newblock Deepmatching: Hierarchical deformable dense matching.
+\newblock \emph{ArXiv e-prints}, 1\penalty0 (7):\penalty0 8, 2015.
+
+\bibitem[Scharstein and Pal(2007)]{scharstein2007learning}
+Daniel Scharstein and Chris Pal.
+\newblock Learning conditional random fields for stereo.
+\newblock \emph{IEEE Conference on Computer Vision and Pattern Recognition
+  (CVPR)}, June 2007.
+
+\bibitem[Scharstein and Szeliski(2002)]{scharstein2002taxonomy}
+Daniel Scharstein and Richard Szeliski.
+\newblock A taxonomy and evaluation of dense two-frame stereo correspondence
+  algorithms.
+\newblock \emph{International Journal of Computer Vision}, 47\penalty0
+  (1-3):\penalty0 7--42, 2002.
+
+\bibitem[Scharstein and Szeliski(2003)]{scharstein2003high}
+Daniel Scharstein and Richard Szeliski.
+\newblock High-accuracy stereo depth maps using structured light.
+\newblock \emph{IEEE Conference on Computer Vision and Pattern Recognition
+  (CVPR)}, June 2003.
+
+\bibitem[Scharstein et~al.(2014)Scharstein, Hirschm{\"u}ller, Kitajima,
+  Krathwohl, Ne{\v{s}}i{\'c}, Wang, and Westling]{scharstein2014high}
+Daniel Scharstein, Heiko Hirschm{\"u}ller, York Kitajima, Greg Krathwohl, Nera
+  Ne{\v{s}}i{\'c}, Xi~Wang, and Porter Westling.
+\newblock High-resolution stereo datasets with subpixel-accurate ground truth.
+\newblock \emph{German Conference on Pattern Recognition (GCPR)}, September
+  2014.
+
+\bibitem[Simonyan et~al.(2014)Simonyan, Vedaldi, and
+  Zisserman]{simonyan2014learning}
+Karen Simonyan, Andrea Vedaldi, and Andrew Zisserman.
+\newblock Learning local feature descriptors using convex optimisation.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 36\penalty0 (8):\penalty0 1573--1585, 2014.
+
+\bibitem[Sinha et~al.(2014)Sinha, Scharstein, and Szeliski]{sinha2014efficient}
+Sudipta~N Sinha, Daniel Scharstein, and Richard Szeliski.
+\newblock Efficient high-resolution stereo matching using local plane sweeps.
+\newblock \emph{IEEE Conference on Computer Vision and Pattern Recognition
+  (CVPR)}, June 2014.
+
+\bibitem[Spyropoulos et~al.(2014)Spyropoulos, Komodakis, and
+  Mordohai]{spyropoulos2014learning}
+Aristotle Spyropoulos, Nikos Komodakis, and Philippos Mordohai.
+\newblock Learning to detect ground control points for improving the accuracy
+  of stereo matching.
+\newblock \emph{IEEE Conference on Computer Vision and Pattern Recognition
+  (CVPR)}, June 2014.
+
+\bibitem[Sun et~al.(2014)Sun, Roth, and Black]{sun2014quantitative}
+Deqing Sun, Stefan Roth, and Michael~J Black.
+\newblock A quantitative analysis of current practices in optical flow
+  estimation and the principles behind them.
+\newblock \emph{International Journal of Computer Vision}, 106\penalty0
+  (2):\penalty0 115--137, 2014.
+
+\bibitem[Trzcinski et~al.(2012)Trzcinski, Christoudias, Lepetit, and
+  Fua]{trzcinski2012learning}
+Tomasz Trzcinski, Mario Christoudias, Vincent Lepetit, and Pascal Fua.
+\newblock Learning image descriptors with the boosting-trick.
+\newblock In \emph{Advances in neural information processing systems}, pages
+  269--277, 2012.
+
+\bibitem[Vogel et~al.(2013)Vogel, Schindler, and Roth]{vogel2013piecewise}
+Christoph Vogel, Konrad Schindler, and Stefan Roth.
+\newblock Piecewise rigid scene flow.
+\newblock \emph{IEEE International Conference on Computer Vision (ICCV)}, 2013.
+
+\bibitem[Vogel et~al.(2014)Vogel, Roth, and Schindler]{vogel2014view}
+Christoph Vogel, Stefan Roth, and Konrad Schindler.
+\newblock View-consistent {3D} scene flow estimation over multiple frames.
+\newblock \emph{European Conference on Computer Vision (ECCV)}, September 2014.
+
+\bibitem[Vogel et~al.(2015)Vogel, Schindler, and Roth]{vogel20153d}
+Christoph Vogel, Konrad Schindler, and Stefan Roth.
+\newblock {3D} scene flow estimation with a piecewise rigid scene model.
+\newblock \emph{International Journal of Computer Vision}, pages 1--28, 2015.
+
+\bibitem[Yamaguchi et~al.(2014)Yamaguchi, McAllester, and
+  Urtasun]{yamaguchi2014efficient}
+Koichiro Yamaguchi, David McAllester, and Raquel Urtasun.
+\newblock Efficient joint segmentation, occlusion labeling, stereo and flow
+  estimation.
+\newblock \emph{European Conference on Computer Vision (ECCV)}, September 2014.
+
+\bibitem[Zabih and Woodfill(1994)]{zabih1994non}
+Ramin Zabih and John Woodfill.
+\newblock Non-parametric local transforms for computing visual correspondence.
+\newblock \emph{European Conference on Computer Vision (ECCV)}, 1994.
+
+\bibitem[Zagoruyko and Komodakis(2015)]{zagoruyko2015learning}
+Sergey Zagoruyko and Nikos Komodakis.
+\newblock Learning to compare image patches via convolutional neural networks.
+\newblock \emph{IEEE Conference on Computer Vision and Pattern Recognition
+  (CVPR)}, June 2015.
+
+\bibitem[{\v{Z}}bontar and LeCun(2015)]{Zbontar_2015_CVPR}
+Jure {\v{Z}}bontar and Yann LeCun.
+\newblock Computing the stereo matching cost with a convolutional neural
+  network.
+\newblock \emph{IEEE Conference on Computer Vision and Pattern Recognition
+  (CVPR)}, June 2015.
+
+\bibitem[Zhang et~al.(2015)Zhang, Li, Cheng, Cai, Chao, and
+  Rui]{zhang2015meshstereo}
+Chi Zhang, Zhiwei Li, Yanhua Cheng, Rui Cai, Hongyang Chao, and Yong Rui.
+\newblock Meshstereo: A global stereo model with mesh alignment regularization
+  for view interpolation.
+\newblock \emph{IEEE International Conference on Computer Vision (ICCV)}, 2015.
+
+\bibitem[Zhang et~al.(2009)Zhang, Lu, and Lafruit]{zhang2009cross}
+Ke~Zhang, Jiangbo Lu, and Gauthier Lafruit.
+\newblock Cross-based local stereo matching using orthogonal integral images.
+\newblock \emph{IEEE Transactions on Circuits and Systems for Video
+  Technology}, 19\penalty0 (7):\penalty0 1073--1079, 2009.
+
+\bibitem[Zhang and Seitz(2007)]{zhang2007estimating}
+Li~Zhang and Steven~M Seitz.
+\newblock Estimating optimal parameters for {MRF} stereo from a single image
+  pair.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 29\penalty0 (2):\penalty0 331--342, 2007.
+
+\end{thebibliography}

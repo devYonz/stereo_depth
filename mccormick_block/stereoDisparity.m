@@ -1,27 +1,33 @@
-% The following code was adapted from a Mathworks example available here:
-% http://www.mathworks.com/help/vision/examples/stereo-vision.html
-%
-% This script will compute the disparity map for the image 'right.png' by
-% correlating it to 'left.png' using basic block matching and sub-pixel
-% estimation. This code corresponds to sections 1 - 3 of the Mathworks 
-% tutorial. 
-%
-% The main differences with the original tutorial are the following:
-%   - Removed dependency on the TemplateMatcher object.
-%   - Syntax and variable name changes for clarity.
-%   - Extensive commenting.
 
-% $Author: ChrisMcCormick $    $Date: 2014/01/10 22:00:00 $    $Revision: 1.0 $
+%{ 
+Chris McCormick+ implementation of blokcmatching:
+  http://mccormickml.com/2014/01/10/stereo-vision-tutorial-part-i/
+The following code was adapted from a Mathworks example available here:
+  http://www.mathworks.com/help/vision/examples/stereo-vision.html
 
-% Revision notes:
-%   v1.0 - 2014/01/10
-%     - Initial version.
+This script will compute the disparity map for the image 'right.png' by
+correlating it to 'left.png' using basic block matching and sub-pixel
+estimation. This code corresponds to sections 1 - 3 of the Mathworks 
+tutorial. 
+
+The main differences with the original tutorial are the following:
+  - Removed dependency on the TemplateMatcher object.
+  - Syntax and variable name changes for clarity.
+  - Extensive commenting.
+
+$Author: ChrisMcCormick $    $Date: 2014/01/10 22:00:00 $    $Revision: 1.0 $
+
+Revision notes:
+  v1.0 - 2014/01/10
+    - Initial version.
+%}
 
 % Load the stereo images.
-left = imread('left.png');
-right = imread('right.png');
+current_folder = pwd;
+left = imread(strcat(current_folder,'/left.png'));
+right = imread(strcat(current_folder,'/right.png'));
 
-%{
+
 % ===================================
 %       Display Composite Image
 % ===================================
@@ -44,7 +50,7 @@ figure(1), clf;
 image(composite);
 axis image;
 title('Composite image');
-%}
+
 
 % ====================================
 %        Basic Block Matching
@@ -82,7 +88,7 @@ blockSize = 2 * halfBlockSize + 1;
 [imgHeight, imgWidth] = size(leftI);
 
 % For each row 'm' of pixels in the image...
-for (m = 1 : imgHeight)
+for m = 1 : imgHeight
     	
 	% Set min/max row bounds for the template and blocks.
 	% e.g., for the first row, minr = 1 and maxr = 4
@@ -90,7 +96,7 @@ for (m = 1 : imgHeight)
     maxr = min(imgHeight, m + halfBlockSize);
 	
     % For each column 'n' of pixels in the image...
-    for (n = 1 : imgWidth)
+    for n = 1 : imgWidth
         
 		% Set the min/max column bounds for the template.
 		% e.g., for the first column, minc = 1 and maxc = 4
@@ -131,7 +137,7 @@ for (m = 1 : imgHeight)
 		
 			% Take the sum of absolute differences (SAD) between the template
 			% and the block and store the resulting value.
-			blockDiffs(blockIndex, 1) = sum(sum(abs(template - block)));
+			blockDiffs(blockIndex, 1) = sum(sum(abs(template - block).^2));
 		end
 		
 		% Sort the SAD values to find the closest match (smallest difference).
@@ -194,7 +200,7 @@ clf;
 % Passing an empty matrix as the second argument tells imshow to take the
 % minimum and maximum values of the data and map the data range to the 
 % display colors.
-image(DbasicSubpixel, []);
+image(DbasicSubpixel);
 
 % Configure the axes to properly display an image.
 axis image;
