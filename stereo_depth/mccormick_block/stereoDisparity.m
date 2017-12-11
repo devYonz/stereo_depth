@@ -24,8 +24,8 @@ Revision notes:
 
 % Load the stereo images.
 current_folder = pwd;
-left = imread(strcat(current_folder,'/left.png'));
-right = imread(strcat(current_folder,'/right.png'));
+left = imread(strcat(current_folder,'/left_jade.png'));
+right = imread(strcat(current_folder,'/right_jade.png'));
 
 
 % ===================================
@@ -73,6 +73,7 @@ rightI = mean(right, 3);
 % DbasicSubpixel will hold the result of the block matching. 
 % The values will be 'single' precision (32-bit) floating point.
 DbasicSubpixel = zeros(size(leftI), 'single');
+DbasicSubpixel_SSD = zeros(size(leftI), 'single');
 
 % The disparity range defines how many pixels away from the block's location
 % in the first image to search for a matching block in the other image.
@@ -124,7 +125,8 @@ for m = 1 : imgHeight
 		numBlocks = maxd - mind + 1;
 		
 		% Create a vector to hold the block differences.
-		blockDiffs = zeros(numBlocks, 1);
+		blockDiffs_SAD = zeros(numBlocks, 1);
+        blockDiffs_SSD = zeros(numBlocks, 1);
 		
 		% Calculate the difference between the template and each of the blocks.
 		for (i = mind : maxd)
@@ -132,18 +134,19 @@ for m = 1 : imgHeight
 			% Select the block from the left image at the distance 'i'.
 			block = leftI(minr:maxr, (minc + i):(maxc + i));
 		
-			% Compute the 1-based index of this block into the 'blockDiffs' vector.
+			% Compute the 1-based index of this block into the 'blockDiffs_SAD' vector.
 			blockIndex = i - mind + 1;
 		
 			% Take the sum of absolute differences (SAD) between the template
 			% and the block and store the resulting value.
-			blockDiffs(blockIndex, 1) = sum(sum(abs(template - block).^2));
+			blockDiffs_SAD(blockIndex, 1) = sum(sum(abs(template - block)));
+            blockDiffs_SSD(blockIndex, 1) = sum(sum(abs(template - block).^2));
 		end
 		
 		% Sort the SAD values to find the closest match (smallest difference).
 		% Discard the sorted vector (the "~" notation), we just want the list
 		% of indices.
-		[temp, sortedIndeces] = sort(blockDiffs);
+		[temp, sortedIndeces] = sort(blockDiffs_SAD);
 		
 		% Get the 1-based index of the closest-matching block.
 		bestMatchIndex = sortedIndeces(1, 1);
@@ -162,14 +165,33 @@ for m = 1 : imgHeight
 		else
 			% Grab the SAD values at the closest matching block (C2) and it's 
 			% immediate neighbors (C1 and C3).
-			C1 = blockDiffs(bestMatchIndex - 1);
-			C2 = blockDiffs(bestMatchIndex);
-			C3 = blockDiffs(bestMatchIndex + 1);
+			C1 = blockDiffs_SAD(bestMatchIndex - 1);
+			C2 = blockDiffs_SAD(bestMatchIndex);
+			C3 = blockDiffs_SAD(bestMatchIndex + 1);
 			
 			% Adjust the disparity by some fraction.
 			% We're estimating the subpixel location of the true best match.
 			DbasicSubpixel(m, n) = d - (0.5 * (C3 - C1) / (C1 - (2*C2) + C3));
-		end
+        end
+        % duplicate for sum of squared difference
+        [temp2, sortedIndeces2] = sort(blockDiffs_SSD);
+        bestMatchIndex_SSD = sortedIndeces2(1, 1);
+        d2 = bestMatchIndex_SSD + mind - 1;
+
+        if ((bestMatchIndex_SSD == 1) || (bestMatchIndex_SSD == numBlocks))
+			% Skip sub-pixel estimation and store the initial disparity value.
+            DbasicSubpixel_SSD(m, n) = d;
+		else
+			% Grab the SAD values at the closest matching block (C2) and it's 
+			% immediate neighbors (C1 and C3).
+			C1_SSD = blockDiffs_SSD(bestMatchIndex_SSD - 1);
+			C2_SSD = blockDiffs_SSD(bestMatchIndex_SSD);
+			C3_SSD = blockDiffs_SSD(bestMatchIndex_SSD + 1);
+			
+			% Adjust the disparity by some fraction.
+			% We're estimating the subpixel location of the true best match.
+			DbasicSubpixel_SSD(m, n) = d2 - (0.5 * (C3_SSD - C1_SSD) / (C1_SSD - (2*C2_SSD) + C3_SSD));
+        end        
     end
 
 	% Update progress every 10th row.
@@ -219,4 +241,14 @@ colorbar;
 %caxis([0 disparityRange]);
 
 % Set the title to display.
-title(strcat('Basic block matching, Sub-px acc., Search right, Block size = ', num2str(blockSize)));
+title(strcat('Basic block matching SAD Sub-px acc., Search right, Block size = ', num2str(blockSize)));
+
+% Switch to figure 2.
+figure(2);
+image(DbasicSubpixel_SSD);
+axis image;
+colormap('jet');
+colorbar;
+
+% Set the title to display.
+title(strcat('Basic block matching SSD Sub-px acc., Search right, Block size = ', num2str(blockSize)));
