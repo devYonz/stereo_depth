@@ -23,9 +23,11 @@ Revision notes:
 %}
 
 % Load the stereo images.
-current_folder = pwd;
-left = imread(strcat(current_folder,'/left_ma.png'));
-right = imread(strcat(current_folder,'/right.png'));
+% current_folder = pwd;
+% left = imread(strcat(current_folder,'/left_jade.png'));
+% right = imread(strcat(current_folder,'/right_jade.png'));
+left = imread('tsukuba-imL.png');
+right = imread('tsukuba-imr
 
 
 % ===================================
@@ -244,8 +246,8 @@ colorbar;
 title(strcat('Basic block matching SAD Sub-px acc., Search right, Block size = ', num2str(blockSize)));
 
 % Switch to figure 2.
-figure(1);
-image(DbasicSubpixel);
+figure(2);
+image(DbasicSubpixel_SSD);
 axis image;
 colormap('jet');
 colorbar;

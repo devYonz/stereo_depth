@@ -23,9 +23,11 @@ Revision notes:
 %}
 
 % Load the stereo images.
-current_folder = pwd;
-left = imread(strcat(current_folder,'/left_jade.png'));
-right = imread(strcat(current_folder,'/right_jade.png'));
+% current_folder = pwd;
+% left = imread(strcat(current_folder,'/left_jade.png'));
+% right = imread(strcat(current_folder,'/right_jade.png'));
+left = imread('tsukuba-imL.png');
+right = imread('tsukuba-imR.png');
 
 
 % ===================================
@@ -252,3 +254,5 @@ colorbar;
 
 % Set the title to display.
 title(strcat('Basic block matching SSD Sub-px acc., Search right, Block size = ', num2str(blockSize)));
+imwrite(DbasicSubpixel, 'tsukuba_disparity_block_sad.png')
+imwrite(DbasicSubpixel_SSD, 'tsukuba_disparity_block_ssd.png')
