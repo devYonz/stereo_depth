@@ -46,13 +46,17 @@ In this paper, we have given a wide range of topics related to the available sol
 The current state of the art with this problem set is wide and varied but with more stereo images with ground truths, the learned approaches are quickly becoming the norm. Although we take our innate capability of understanding the 3-dimensional geometry of the objects we see, the capability was enabled by a huge trove of a priori knowledge on top of the available planar intersection, shadow and ray tracing, relative size, convergence, defocus and accommodation cues. The world of computer vision is barely scratching the surface when compared to what nature has already perfected. The pace of innovation holds much promise that one day we will be able to outperform the human brain not only in depth perception but also in 3D reconstruction and recognition.
 
 ## Appendix
-[1] A Comparative Study of Energy Minimization Methods for Markov Random Fields with Smoothness-Based Priors,
-IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 30(6):1068-1080, June 2008.
-[2] http://szeliski.org/Book
-[3]
-[4] Information, Physics and Computatio
-Marc Mezar, Andrea Montanari
-
-The goal is to identify your algorithms [3].
-Understanding, explaining, and contrasting the algorithms would be a good project. 
-The evaluation of the algorithms is good, but more it is more important to focus on understanding how they work and the differences between the algorithms.
+[1] Scharstein, D., & Szeliski, R. (2002). A taxonomy and evaluation of dense two-frame stereo correspondence algorithms. International Journal of Computer Vision, 47.
+[2] Dall'Asta, E. and Roncella, R., 2014. A comparison of semiglobal and local dense matching algorithms for surface reconstruction. International Archives of
+Photogrammetry, Remote Sensing and Spatial Information Sciences, 40(5): 187–194.
+[3] Zbontar, Jure, and Yann LeCun. "Stereo matching by training a convolutional neural network to compare image patches." Journal of Machine Learning Research 17.1-32 (2016): 2.
+[4] Van Meerbergen, Geert, et al. "A hierarchical symmetric stereo algorithm using dynamic programming." International Journal of Computer Vision 47.1 (2002): 275-285.
+[5] Boykov, Yuri, Olga Veksler, and Ramin Zabih. "Fast approximate energy minimization via graph cuts." IEEE Transactions on pattern analysis and machine intelligence23.11 (2001): 1222-1239.
+[6] Sun, Jian, Nan-Ning Zheng, and Heung-Yeung Shum. "Stereo matching using belief propagation." IEEE Transactions on pattern analysis and machine intelligence 25.7 (2003): 787-800
+[7]Szeliski, Richard, et al. "A comparative study of energy minimization methods for markov random fields with smoothness-based priors." IEEE transactions on pattern analysis and machine intelligence 30.6 (2008): 1068-1080.
+[8] Hirschmuller, Heiko. "Accurate and efficient stereo processing by semi-global matching and mutual information." Computer Vision and Pattern Recognition, 2005. CVPR 2005. IEEE Computer Society Conference on. Vol. 2. IEEE, 2005.
+[9] Geman, Stuart, and Donald Geman. "Stochastic relaxation, Gibbs distributions, and the Bayesian restoration of images." IEEE Transactions on pattern analysis and machine intelligence 6 (1984): 721-741.
+[10] Barnard, Stephen T. "A stochastic approach to stereo vision." AAAI. 1986.
+[11] Szeliski, Richard. Computer vision: algorithms and applications. Springer Science & Business Media, 2010.
+[12] H. Ishikawa, “Exact Optimization for Markov Random Fields with Convex Priors,” IEEE Trans. Pattern Analysis and Machine Intelligence, vol. 25, no. 10, pp. 1333-1336, Oct. 2003.
+[13] A Comparative Study of Energy Minimization Methods for Markov Random Fields with Smoothness-Based Priors, IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 30(6):1068-1080, June 2008.
