@@ -23,11 +23,11 @@ Revision notes:
 %}
 
 % Load the stereo images.
-% current_folder = pwd;
-% left = imread(strcat(current_folder,'/left_jade.png'));
-% right = imread(strcat(current_folder,'/right_jade.png'));
-left = imread('tsukuba-imL.png');
-right = imread('tsukuba-imR.png');
+%  current_folder = pwd;
+%  left = imread(strcat(current_folder,'/left_mask.png'));
+%  right = imread(strcat(current_folder,'/right_mask.png'));
+ left = imread('tsukuba-imL.png');
+ right = imread('tsukuba-imR.png');
 
 
 % ===================================
